@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: "Men's Oversized T-Shirt",
+    name: "Men's Oversized Pants",
     price: 29.99,
     rating: 4.8,
     reviews: 127,
