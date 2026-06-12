@@ -17,7 +17,7 @@ export const products = [
 
   {
     id: 2,
-    name: "Men's Hoodie",
+    name: "Men's Hoodies",
     price: 49.99,
     rating: 4.7,
     reviews: 89,
