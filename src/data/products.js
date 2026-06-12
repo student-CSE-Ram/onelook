@@ -1,8 +1,8 @@
 export const products = [
   {
     id: 1,
-    name: "Men's Oversized womens T-Shirt",
-    price: 2999.99,
+    name: "Men's Oversized T-Shirt",
+    price: 29.99,
     rating: 4.8,
     reviews: 127,
     description: "Premium cotton oversized t-shirt designed for everyday comfort and modern streetwear style.",
@@ -17,7 +17,7 @@ export const products = [
 
   {
     id: 2,
-    name: "Men's Hoodie with gf pic ",
+    name: "Men's Hoodies",
     price: 49.99,
     rating: 4.7,
     reviews: 89,
@@ -33,7 +33,7 @@ export const products = [
 
   {
     id: 3,
-    name: "Men's Denim Jacket fell like nothing",
+    name: "Men's Denim Jacket",
     price: 69.99,
     rating: 4.6,
     reviews: 203,
