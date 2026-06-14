@@ -43,8 +43,8 @@ export default function Footer() {
             <div>
               <div className="footer-brand-logo">One<span>Look</span></div>
               <p className="footer-brand-desc">Discover unique clothing that inspires your lifestyle. Quality craftsmanship meets modern design.</p>
-              <p className="footer-contact-item">📍 123 Fashion Street, Style City, SC 12345</p>
-              <p className="footer-contact-item">📞 +1 (555) 123-4567</p>
+              <p className="footer-contact-item">📍 Shahpur Thana | Medical Road | Gorakhpur U.P </p>
+              <p className="footer-contact-item">📞 +91 94504 35594</p>
               <p className="footer-contact-item">✉️ hello@onelook.com</p>
               <div className="footer-socials">
                 {['𝕏','f','in','▶'].map((s, i) => (
