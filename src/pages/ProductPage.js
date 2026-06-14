@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { products } from '../data/products';
 import { useCart } from '../context/CartContext';
@@ -6,10 +6,23 @@ import ProductCard from '../components/ProductCard';
 
 export default function ProductPage() {
   const { id } = useParams();
+  useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}, [id]);
   const navigate = useNavigate();
   const product = products.find(p => p.id === parseInt(id));
   const { addToCart, toggleWishlist, wishlist } = useCart();
   const [qty, setQty] = useState(1);
+
+useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}, [id]);
 
   if (!product) {
     return (
@@ -62,37 +75,50 @@ export default function ProductPage() {
     href={product.amazonLink}
     target="_blank"
     rel="noreferrer"
-    className="btn-marketplace amazon"
+    className="btn-order-now"
   >
-    Buy on Amazon
+    Order Now
   </a>
 
-  <a
-    href={product.flipkartLink}
-    target="_blank"
-    rel="noreferrer"
-    className="btn-marketplace flipkart"
-  >
-    Buy on Flipkart
-  </a>
+  <div className="marketplace-chips">
 
-  <a
-    href={product.meeshoLink}
-    target="_blank"
-    rel="noreferrer"
-    className="btn-marketplace meesho"
-  >
-    Buy on Meesho
-  </a>
+    <a
+      href={product.amazonLink}
+      target="_blank"
+      rel="noreferrer"
+      className="market-chip"
+    >
+      Amazon
+    </a>
 
-  <a
-    href={product.myntraLink}
-    target="_blank"
-    rel="noreferrer"
-    className="btn-marketplace myntra"
-  >
-    Buy on Myntra
-  </a>
+    <a
+      href={product.flipkartLink}
+      target="_blank"
+      rel="noreferrer"
+      className="market-chip"
+    >
+      Flipkart
+    </a>
+
+    <a
+      href={product.meeshoLink}
+      target="_blank"
+      rel="noreferrer"
+      className="market-chip"
+    >
+      Meesho
+    </a>
+
+    <a
+      href={product.myntraLink}
+      target="_blank"
+      rel="noreferrer"
+      className="market-chip"
+    >
+      Myntra
+    </a>
+
+  </div>
 
 </div>
 

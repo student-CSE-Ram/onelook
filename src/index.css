@@ -291,6 +291,40 @@ input, textarea, select { font-family: inherit; }
 .myntra {
   background: #ff3f6c;
 }
+
+.btn-order-now {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--black);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.marketplace-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.market-chip {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--gray-100);
+  color: var(--black);
+  border: 1px solid var(--gray-200);
+  font-size: 13px;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+.market-chip:hover {
+  background: var(--black);
+  color: white;
+}
 /* HERO */
 .hero {
   background: var(--black);
